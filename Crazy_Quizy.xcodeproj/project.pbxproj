@@ -9,21 +9,31 @@
 /* Begin PBXBuildFile section */
 		74150CC52A8219D700E143FC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74150CC42A8219D700E143FC /* AppDelegate.swift */; };
 		74150CC72A8219D700E143FC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74150CC62A8219D700E143FC /* SceneDelegate.swift */; };
-		74150CC92A8219D700E143FC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74150CC82A8219D700E143FC /* ViewController.swift */; };
 		74150CCC2A8219D700E143FC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74150CCA2A8219D700E143FC /* Main.storyboard */; };
 		74150CCE2A8219DA00E143FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74150CCD2A8219DA00E143FC /* Assets.xcassets */; };
 		74150CD12A8219DA00E143FC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74150CCF2A8219DA00E143FC /* LaunchScreen.storyboard */; };
+		74150CD92A821A3700E143FC /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74150CD82A821A3700E143FC /* IntroViewController.swift */; };
+		74150CDB2A821A8500E143FC /* QuestionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74150CDA2A821A8500E143FC /* QuestionViewController.swift */; };
+		74150CDD2A821AC600E143FC /* ScoreViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74150CDC2A821AC600E143FC /* ScoreViewController.swift */; };
+		74150CDF2A821B0600E143FC /* QuestionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74150CDE2A821B0600E143FC /* QuestionModel.swift */; };
+		74150CE12A821B3500E143FC /* CategoryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74150CE02A821B3500E143FC /* CategoryModel.swift */; };
+		748FF1CA2A824A9A004E5060 /* timerFunction.swift in Sources */ = {isa = PBXBuildFile; fileRef = 748FF1C92A824A9A004E5060 /* timerFunction.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		74150CC12A8219D700E143FC /* Crazy_Quizy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crazy_Quizy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74150CC42A8219D700E143FC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74150CC62A8219D700E143FC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		74150CC82A8219D700E143FC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		74150CCB2A8219D700E143FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74150CCD2A8219DA00E143FC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		74150CD02A8219DA00E143FC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		74150CD22A8219DA00E143FC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74150CD82A821A3700E143FC /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		74150CDA2A821A8500E143FC /* QuestionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionViewController.swift; sourceTree = "<group>"; };
+		74150CDC2A821AC600E143FC /* ScoreViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoreViewController.swift; sourceTree = "<group>"; };
+		74150CDE2A821B0600E143FC /* QuestionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionModel.swift; sourceTree = "<group>"; };
+		74150CE02A821B3500E143FC /* CategoryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryModel.swift; sourceTree = "<group>"; };
+		748FF1C92A824A9A004E5060 /* timerFunction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = timerFunction.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,13 +68,42 @@
 			children = (
 				74150CC42A8219D700E143FC /* AppDelegate.swift */,
 				74150CC62A8219D700E143FC /* SceneDelegate.swift */,
-				74150CC82A8219D700E143FC /* ViewController.swift */,
-				74150CCA2A8219D700E143FC /* Main.storyboard */,
+				74FC19DE2A8236FC00C34AFF /* Controller */,
+				74619F5C2A822CD300621D84 /* Visual */,
+				74150CE22A821B3E00E143FC /* Model */,
 				74150CCD2A8219DA00E143FC /* Assets.xcassets */,
 				74150CCF2A8219DA00E143FC /* LaunchScreen.storyboard */,
 				74150CD22A8219DA00E143FC /* Info.plist */,
 			);
 			path = Crazy_Quizy;
+			sourceTree = "<group>";
+		};
+		74150CE22A821B3E00E143FC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				748FF1C92A824A9A004E5060 /* timerFunction.swift */,
+				74150CDE2A821B0600E143FC /* QuestionModel.swift */,
+				74150CE02A821B3500E143FC /* CategoryModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		74619F5C2A822CD300621D84 /* Visual */ = {
+			isa = PBXGroup;
+			children = (
+				74150CCA2A8219D700E143FC /* Main.storyboard */,
+			);
+			path = Visual;
+			sourceTree = "<group>";
+		};
+		74FC19DE2A8236FC00C34AFF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				74150CDC2A821AC600E143FC /* ScoreViewController.swift */,
+				74150CDA2A821A8500E143FC /* QuestionViewController.swift */,
+				74150CD82A821A3700E143FC /* IntroViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,8 +177,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74150CC92A8219D700E143FC /* ViewController.swift in Sources */,
+				74150CD92A821A3700E143FC /* IntroViewController.swift in Sources */,
 				74150CC52A8219D700E143FC /* AppDelegate.swift in Sources */,
+				74150CDD2A821AC600E143FC /* ScoreViewController.swift in Sources */,
+				74150CDF2A821B0600E143FC /* QuestionModel.swift in Sources */,
+				74150CE12A821B3500E143FC /* CategoryModel.swift in Sources */,
+				748FF1CA2A824A9A004E5060 /* timerFunction.swift in Sources */,
+				74150CDB2A821A8500E143FC /* QuestionViewController.swift in Sources */,
 				74150CC72A8219D700E143FC /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
